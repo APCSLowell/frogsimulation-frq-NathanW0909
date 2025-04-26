@@ -24,7 +24,7 @@ public class FrogSimulation
 			if (sum (0){
 				return false;
 			}
-			if (sum >= goal sum){
+			if (sum >= goal distance){
 				return true;
 			}
 		}
