@@ -35,15 +35,13 @@ public class FrogSimulation
 	
 	public double runSimulations(int num)
 	{ 
-		int numSuccess = 0;
-for (int i = o; i < num; i++){
-	if (simulate ()){ 
-		numSuccess++;
+		double s = 0;
+		for (int i=0;i<num;i++) {
+			s +=simulate()?1:0;
+		}
+		return s/num;
 	}
-}
-return((double)numSuccess)/num;
-
-	}
+	
 	
 	
 	//ignore the code below this line
