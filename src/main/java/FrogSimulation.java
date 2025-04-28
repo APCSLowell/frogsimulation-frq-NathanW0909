@@ -25,6 +25,14 @@ public class FrogSimulation
 		return false;
 	}
 	
+	public double runSimulations(int num)
+	{ 
+		double s = 0;
+		for (int i=0;i<num;i++) {
+			s+=simulate()?1:0;
+		}
+		return s/num;
+	}
 	
 	//ignore the code below this line
 	//-------------------------------------------------------------------------------------
